@@ -1,0 +1,36 @@
+.form-container {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  background: none;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+  padding: 40px;
+  margin: 20px 0;
+  width: 50%;
+  max-width: 500px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    input,
+    textarea {
+      border: 1px solid $color-4;
+      font-family: "Amiri", serif;
+      padding: 5px 10px;
+      resize: none;
+    }
+
+    input[type="text"],
+    textarea {
+      margin-bottom: 6px;
+    }
+    textarea {
+      height: 80px;
+    }
+  }
+}
